@@ -1,62 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-com</title>
-</head>
-<body>
-    <header class="header-top">
-        <div class="top-left">
-            <a href="#">About Us</a>
-            <a href="#">My Account</a>
-            <a href="#">Wishlist</a>
-            <a href="#"></a>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-com</title>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-top">
+                <div class="top-left">
+                    <a href="#">About Us</a>
+                    <a href="#">My Account</a>
+                    <a href="#">Wishlist</a>
+                    <a href="#"></a>
+                </div>
+            
+                <p>Free shipping for all orders over <span>$75.00</span></p>
+                
+                <div class="top-right">
+                    <p>Need help? Call us: <span>+ 1800 900</span></p>
+                    <img src="assets/img/uk-flag.png" alt="UK Flag">
+                    <p>English</p>
+                    <select></select>
+                    <p>USD</p>
+                    <select></select>
+                </div>
+            </div>
+            
+            <div class="header-bottom">
+                <img src="assets/img/logo.png" alt="logo">
+            
+                <div class="search-bar">
+                    <p>All Categories</p>
+                    <select></select>
 
-        <p>Free shipping for all orders over <span>$75.00</span></p>
-        
-        <div class="top-right">
-            <p>Need help? Call us: <span>+ 1800 900</span></p>
-            <img src="assets/img/uk-flag.png" alt="UK Flag">
-            <p>English</p>
-            <select></select>
-            <p>USD</p>
-            <select></select>
-        </div>
+                    <input type="text" class="search-bar-input" placeholder="Search for items" readonly>
+                    
+                    <button type="button" class="search-bar-btn">
+                        <img src="assets/img/search.png" alt="search">
+                    </button>
+                </div>
+            
+                <div class="bottom-middle">
+                    <a href="#">Home</a>
+                    <select></select>
+                    <a href="#">Shop</a>
+                    <a href="#">Vendors</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
+            
+                <div class="bottom-right">
+                    <img src="assets/img/wishlist-icon.png" alt="wishlist icon">
+                    <a href="#">Wishlist</a>
+                    <img src="assets/img/cart-icon.png" alt="cart icon">
+                    <a href="#">Cart</a>
+                    <img src="assets/img/compare-icon.png" alt="compare icon">
+                    <a href="#">Compare</a>
+                    <img src="assets/img/account-icon.png" alt="account icon">
+                    <a href="#">Account</a>
+                </div>
+            </div>
     </header>
 
-    <header class="header-bottom">
-        <img src="assets/img/logo.png" alt="logo">
+    <main class="main">
+        <section class="category-grid">
+            <div class="category-smartphones">
+                <div class="category-image-wrapper">
+                    <!-- smartphone-img -->
+                </div>
+                <h4>Smartphones</h4>
+            </div>
 
-        <div class="search-bar">
-            <p>All Categories</p>
-            <select></select>
-            <span>Searh for items</span>
-            <img src="assets/img/search.png" alt="search">
-        </div>
+            <div class="category-laptops">
+                <div class="category-image-wrapper">
+                    <!-- laptop-img -->
+                </div>
+                <h4>Laptops</h4>
+            </div>
 
-        <div class="bottom-middle">
-            <a href="#">Home</a>
-            <select></select>
-            <a href="#">Shop</a>
-            <a href="#">Vendors</a>
-            <a href="#">Pages</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-        </div>
+            <div class="category-tablets">
+                <div class="category-image-wrapper">
+                    <!-- tablet-img -->
+                </div>
+                <h4>Tablets</h4>
+            </div>
+        </section>
 
-        <div class="bottom-right">
-            <img src="assets/img/wishlist-icon.png" alt="wishlist icon">
-            <a href="#">Wishlist</a>
-            <img src="assets/img/cart-icon.png" alt="cart icon">
-            <a href="#">Cart</a>
-            <img src="assets/img/compare-icon.png" alt="compare icon">
-            <a href="#">Compare</a>
-            <img src="assets/img/account-icon.png" alt="account icon">
-            <a href="#">Account</a>
-        </div>
-        
-    </header>
+        <section class="hero-container">
+            <div class="container-left">
+                <div class="container-left-text">
+                    <span>NEW ARRIVAL</span>
+                    <h3>Smart Tech For Your Daily Life</h3>
+                    <ul>
+                        <li>Free Shipping. Secure Payment</li>
+                        <li>Contact us 24hrs a day</li>
+                        <li>Support gift service</li>
+                    </ul>
+                    <div class="container-btn">
+                        <button type="button" class="shop-now-btn">Shop Now</button>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <!-- img -->
+            </div>
+
+            <div class="container-right">
+                <div class="container-right-text">
+                    <span>NEW ARRIVAL</span>
+                    <h3>50% Sale!</h3>
+                    <span>Remains until the end of the offer</span>
+                    <div class="time">
+                        <div class="days">
+                            <button type="button">12</button>
+                            <span>Days</span>
+                        </div>
+
+                        <div class="hours">
+                            <button type="button">18</button>
+                            <span>Hours</span>
+                        </div>
+
+                        <div class="mins">
+                            <button type="button">56</button>
+                            <span>Mins</span>
+                        </div>
+
+                        <div class="secs">
+                            <button type="button">27</button>
+                            <span>Secs</span>
+                        </div>
+                    </div>
+                    <button type="button" class="shop-now-btn">Shop Now</button>
+                </div>
+                <!-- img -->
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <span>The best products from spring</span>
+            
+            <div class="featured-products-grid" id="featured-list">
+                <!-- product-cards -->
+            </div>
+        </section>
+    </main>
 </body>
 </html>
