@@ -15,6 +15,7 @@ body{
     flex-direction: column;
     justify-content: center;
     color: #425A8B;
+    width: 100%;
 }
 
 .header-top{
@@ -24,6 +25,7 @@ body{
     border-bottom: 1px solid #D5DFE4;
     padding: 0.5rem;
     font-size: .75rem;
+    gap: 1rem;
 }
 
 .header-top span{
@@ -39,7 +41,6 @@ body{
 }
 
 .header-top-left a{
-    padding-right: 22px;
     text-decoration: none;
     color: #425A8B;
 }
@@ -69,6 +70,7 @@ body{
     align-items: center;
     gap: .3rem;
 }
+
 .header-top-right select{
     width: 1rem;
     height: 1rem;
@@ -83,6 +85,7 @@ body{
     flex-direction: column;
     align-items: stretch;
     padding: 0.6rem;
+    border-bottom: 1px solid #D5DFE4;
 }
 
 .first{
@@ -160,7 +163,6 @@ body{
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 
 .bottom-right img{
@@ -171,4 +173,62 @@ body{
 .bottom-right a{
     padding-right: .6rem;
     display: flex;
+}
+
+@media (min-width: 768px){
+    .header-top{
+        font-size: 0.85rem;
+        padding: 1rem 2rem;
+    }
+
+    .header-top-left{
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .header-top-left a{
+        font-size: .85rem;
+    }
+}
+
+@media(min-width:1024px){
+    .header-bottom{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .first{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        width: auto;
+        flex: 1;
+    }
+
+    .search-bar{
+        max-width: 560px;
+        height: 2.5rem;
+    }
+
+    .second{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+        flex: 1;
+    }
+
+    .bottom-middle{
+        gap: 1.5rem;
+    }
+
+    .bottom-right{
+        padding: 0;
+    }
 }
