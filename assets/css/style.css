@@ -16,6 +16,8 @@ body{
     justify-content: center;
     color: #425A8B;
     width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .header-top{
@@ -100,10 +102,10 @@ body{
     justify-content: center;
     flex:1;
     padding: 2px 5px;
-    border: 1px solid       ;
+    border: 1px solid #8C9EC5;
     border-radius: 0.5rem;
     height: 2rem;
-    width: 100%;
+    max-width: 500px;
 }
 .search-bar p{
     font-size: .6rem;
@@ -131,6 +133,10 @@ body{
     background: none;
 }
 
+.search-bar-btn img{
+    width: 15px;
+    height: 15px;
+}
 .second{
     display: flex;
     flex-direction: column;
@@ -151,6 +157,7 @@ body{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
 .bottom-middle select{
     border: none;
     outline: none;
@@ -185,6 +192,7 @@ body{
     display: flex;
     text-align: center;
     justify-content: space-between;
+    margin-right: 12px;
     padding: 1rem;
     color: #425A8B;
 }
@@ -197,6 +205,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color:#D1ECFD;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .category-image-wrapper img{
@@ -208,6 +217,148 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 1rem;
+    width: 100%;
+    margin-bottom: 54px;
+}
+
+.container-left{
+    background: #C7E4FF ;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 330px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container-left-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: .7rem;
+}
+
+.container-left-text span{
+    color: #425A8B;
+    font-weight: bold;
+}
+
+.container-left-text h3{
+    color: #131212;
+    font-weight: bold;
+}
+
+.container-left-text ul{
+    margin-left: 20px;
+}
+
+.container-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.shop-now-btn{
+    border: none;
+    background: #425A8B;
+    border-radius: 6px;
+    padding: 10px;
+    color: #FFFFFF;
+    width: 82px;
+}
+
+.container-btn a{
+    text-decoration: none;
+    color: #425A8B;
+    font-weight: bold;
+}
+
+.container-right{
+    flex: 1;
+    background: #C7E4FF ;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 330px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container-right-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: .7rem;
+}
+
+.container-right-text span{
+    color: #425A8B;
+    font-weight: bold;
+}
+
+.container-right-text h3{
+    color: #131212;
+    font-weight: bold;
+}
+.time{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.days{
+    display: flex;
+    flex-direction: column;
+}
+
+.hours{
+    display: flex;
+    flex-direction: column;
+}
+
+.mins{
+    display: flex;
+    flex-direction: column;
+}
+
+.secs{
+    display: flex;
+    flex-direction: column;
+}
+
+.offer-btn{
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    background: #5BC694;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.featured-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.featured-products h2{
+    color: #425A8B;
+}
+
+.featured-products span{
+    color: #8C9EC5;
 }
 
 @media (min-width: 768px){
@@ -233,6 +384,30 @@ body{
     .category-image-wrapper{
         width: 7rem;
         height: 7rem;
+    }
+
+    .hero-container{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-shrink: 0;
+        gap: 2rem;
+    }
+
+    .container-left{
+        padding: 2rem;
+        min-width: 380px;
+        min-height: 280px;
+        max-width: min-content;
+
+    }
+
+    .container-right{
+        padding: 2rem;
+        min-width: 380px;
+        min-height: 280px;
+        max-width: min-content;
+
     }
 }
 
@@ -286,5 +461,22 @@ body{
     .category-image-wrapper{
         width: 12rem;
         height: 12rem;
+    }
+
+    .hero-container{
+        justify-content: center;
+    }
+    .container-left{
+        padding: 2rem;
+        min-width: 680px;
+        min-height: 400px;
+
+    }
+
+    .container-right{
+        padding: 2rem;
+        min-width: 680px;
+        min-height: 400px;
+        max-width: min-content;
     }
 }
